@@ -21,8 +21,6 @@ This was done on python 3.9.7, using the pandas and matplotlib libraries.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
 - [Matplotlib](https://matplotlib.org/stable/api/index.html)
 - [Pandas](https://pandas.pydata.org/docs/reference/index.html)
 
