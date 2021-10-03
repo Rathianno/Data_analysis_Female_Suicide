@@ -2,18 +2,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 plt.close("all")
 
-# reads the file
+# Reads the file
 df = pd.read_csv("FemaleS.csv")
 
-# groups the cause, takes the mean
+# Groups the data by year, takes the mean
 causes = df.groupby(['Year']).mean()
 
-#causestotal = causes[['CAUSE', 'total_female']]
-
-# prints the median of the professional occupation of female victims.
+# Prints out the raw stats
 print(causes[["total_female"]])
+
+# Makes the bar plot and displays it
 causes[["total_female"]].plot(kind="bar")
 plt.show()
-
-tf = pd.read_csv("yrtotal.csv")
-display(tf)

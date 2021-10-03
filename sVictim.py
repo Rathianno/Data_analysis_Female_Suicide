@@ -1,3 +1,4 @@
+from typing import Awaitable
 import pandas as pd
 import matplotlib.pyplot as plt
 plt.close("all")
@@ -14,6 +15,3 @@ causes = df.groupby(['CAUSE']).mean()
 print(causes[["total_female"]])
 causes.plot(kind="bar")
 plt.show()
-
-tf = pd.read_csv("yrtotal.csv")
-display(tf)
