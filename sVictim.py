@@ -2,15 +2,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 plt.close("all")
 
-# reads the file
+# Reads the file
 df = pd.read_csv("FemaleS.csv")
 
-# groups the cause, takes the mean
+# Groups the cause, takes the mean
 causes = df.groupby(['CAUSE']).mean()
 
-#causestotal = causes[['CAUSE', 'total_female']]
+# Causestotal = causes[['CAUSE', 'total_female']]
 
-# prints the median of the professional occupation of female victims.
+# Prints the median of the professional occupation of female victims.
 print(causes[["total_female"]])
 causes.plot(kind="bar")
 plt.show()
